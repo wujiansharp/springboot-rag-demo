@@ -1,0 +1,27 @@
+# 服务端口
+server:
+  port: 8080
+  servlet:
+    context-path: /rag
+
+spring:
+  application:
+    name: rag-demo
+
+# 自定义业务配置：大模型、向量接口地址
+rag:
+  embedding:
+    api-url: "https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings"
+    api-key: "sk-ws-H.PHEMYEL.MgRR.MEYCIQDQkfMNxesyJOp3mbP7mTpuiIIBP4U5LGOGORfjRLuT0AIhAO6PJpMey15e8_ryL4_hKIJfL4hbUdL4zs1XQm9mD2pY"
+  llm:
+    api-url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+    api-key: "sk-ws-H.PHEMYEL.MgRR.MEYCIQDQkfMNxesyJOp3mbP7mTpuiIIBP4U5LGOGORfjRLuT0AIhAO6PJpMey15e8_ryL4_hKIJfL4hbUdL4zs1XQm9mD2pY"
+  chunk:
+    size: 100
+    overlap: 20
+
+# 日志
+logging:
+  level:
+    root: INFO
+    com.rag: DEBUG
