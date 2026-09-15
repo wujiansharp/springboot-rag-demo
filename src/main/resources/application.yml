@@ -12,10 +12,10 @@ spring:
 rag:
   embedding:
     api-url: "https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings"
-    api-key: "sk-ws-H.PHEMYEL.MgRR.MEYCIQDQkfMNxesyJOp3mbP7mTpuiIIBP4U5LGOGORfjRLuT0AIhAO6PJpMey15e8_ryL4_hKIJfL4hbUdL4zs1XQm9mD2pY"
+    api-key: "sk-****"
   llm:
     api-url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
-    api-key: "sk-ws-H.PHEMYEL.MgRR.MEYCIQDQkfMNxesyJOp3mbP7mTpuiIIBP4U5LGOGORfjRLuT0AIhAO6PJpMey15e8_ryL4_hKIJfL4hbUdL4zs1XQm9mD2pY"
+    api-key: "sk-****"
   chunk:
     size: 100
     overlap: 20
